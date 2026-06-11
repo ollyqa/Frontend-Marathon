@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  color: #21243d;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.active {
+  color: #ff6464;
+}
+/*Common styles end */
+
+/*Header styles start */
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 45px;
+  margin-bottom: 100px;
+}
+
+.menu a {
+  padding: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.about-user {
+  display: flex;
+  justify-content: space-between;
+  border-top: 34px solid #c4c4c4;
+}
+
+.about-user div {
+  width: 500px;
+}
+.about-user img {
+  width: 243px;
+  height: 243px;
+}
+
+.btn {
+  background: #ff6464;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin-top: 35px;
+}
+.burger {
+  width: 30px;
+  height: 20px;
+  margin-left: auto;
+  display: none;
+  border: none;
+  background-image: url("images/menu.svg");
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .about-user {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+  .about-user div {
+    order: 1;
+    text-align: center;
+    width: auto;
+  }
+
+  .burger {
+    display: block;
+  }
+  .about-user img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 50px;
+    box-shadow: -3px 10px 0 #edf7fa;
+    border-radius: 50%;
+  }
+  .menu {
+    padding-top: 20px;
+  }
+  .menu a {
+    display: none;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* BLOG PAGE */
+.post {
+  border-bottom: 1px solid gray;
+  padding-bottom: 30px;
+}
+.post p {
+  margin-top: 15px;
+}
+.date {
+  font-size: 20px;
+  border-right: 1px solid #000;
+  padding-right: 25px;
+  line-height: 30px;
+}
+.topic {
+  font-size: 20px;
+  color: #8695a4;
+  padding-left: 20px;
+  line-height: 30px;
+}
+p {
+  padding-top: 10px;
+}

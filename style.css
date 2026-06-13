@@ -17,6 +17,12 @@ h1 {
   font-size: 44px;
   line-height: 60px;
 }
+
+h2 {
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: 400;
+}
 h3 {
   font-size: 30px;
   margin-bottom: 15px;
@@ -30,11 +36,11 @@ p {
 }
 
 .active {
-  color: #ff6464;
+  color: #ff6464!important;
 }
-/*Common styles end */
+/*COMMON STYLES END */
 
-/*Header styles start */
+/* HEADER STYLES START */
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -124,6 +130,9 @@ p {
 }
 
 /* BLOG PAGE */
+p {
+  padding-top: 10px;
+}
 .post {
   border-bottom: 1px solid gray;
   padding-bottom: 30px;
@@ -143,6 +152,133 @@ p {
   padding-left: 20px;
   line-height: 30px;
 }
-p {
-  padding-top: 10px;
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 26px;
+  }
+  .container {
+    padding: 0 18px;
+  }
+  .date {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+  .topic {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+}
+
+/* FEATURED WORKS */
+.featured-works {
+  /* border: 2px solid red; */
+}
+.work {
+  /* border: 2px solid blue; */
+  display: flex;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.work img {
+  border-radius: 6px;
+  width: 250px;
+  height: 180px;
+  margin-right: 18px;
+}
+
+.work h3 {
+  margin-top: 0;
+}
+
+.badge {
+  background-color: #142850;
+  color: white;
+  font-size: 18px;
+  border-radius: 16px;
+  padding: 0px 10px;
+}
+work p {
+  margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .featured-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  .work {
+    flex-direction: column;
+    width: 345px;
+  }
+  .work img {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .works-page h3 {
+    font-size: 24px;
+  }
+}
+
+/* ARTICLE PAGE */
+.article-page .container {
+  max-width: 680px;
+}
+
+.article-page h1 {
+  font-size: 34px;
+  min-width: 500px;
+}
+.article-badge {
+  background: #ff7c7c;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 16px;
+  padding: 0px 10px;
+  margin-right: 17px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.article-topic {
+  font-size: 20px;
+}
+
+.article-page img {
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.article-page h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.article-page h3 {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .article-page h1 {
+    font-size: 30px;
+  }
+
+  .article-topic {
+    font-size: 18px;
+  }
+
+  .article-page h2 {
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .article-page h3 {
+    font-size: 20px;
+  }
 }

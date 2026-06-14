@@ -28,6 +28,11 @@ h3 {
   margin-bottom: 15px;
 }
 
+h3 a {
+  text-decoration: none;
+  color: #21243d;
+}
+
 p {
   font-weight: 400;
   font-size: 16px;
@@ -36,7 +41,7 @@ p {
 }
 
 .active {
-  color: #ff6464!important;
+  color: #ff6464 !important;
 }
 /*COMMON STYLES END */
 
@@ -281,4 +286,48 @@ work p {
   .article-page h3 {
     font-size: 20px;
   }
+}
+
+footer {
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.socials {
+  /* border: 2px solid #000; */
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials a {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid green; */
+  margin-bottom: 25px;
+}
+
+.icon {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.fb {
+  background-image: url("/images/socials-icons/fb.svg");
+}
+
+.inst {
+  background-image: url("/images/socials-icons/insta.svg");
+}
+
+.tw {
+  background-image: url("/images/socials-icons/twitter.svg");
+}
+
+.lin {
+  background-image: url("/images/socials-icons/linkedin.svg");
 }
